@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Profile Opener</title>
+  <style>
+    body {
+      background-image: url('512x512bb.jpg'); 
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    #openProfiles {
+      padding: 10px 20px;
+      background-color: #0077B5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #openProfiles:hover {
+      background-color: #005F8E;
+    }
+
+    h2 {
+      position: relative;
+      font-size: 24px;
+      margin-bottom: 20px;
+      white-space: nowrap;
+      font-weight: bolder;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: #0077B5;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <button id="openProfiles">Open LinkedIn Profiles</button>
+  <h2>LinkedIn Profile Opener</h2>
+</body>
+</html>
